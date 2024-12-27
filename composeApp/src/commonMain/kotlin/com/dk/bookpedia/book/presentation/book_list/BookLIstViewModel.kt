@@ -1,4 +1,4 @@
-package com.dk.bookpedia.book.presentation.boot_list
+package com.dk.bookpedia.book.presentation.book_list
 
 import androidx.lifecycle.ViewModel
 import kotlinx.coroutines.flow.MutableStateFlow

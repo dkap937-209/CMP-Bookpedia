@@ -1,9 +1,8 @@
-package com.dk.bookpedia.book.presentation.boot_list.components
+package com.dk.bookpedia.book.presentation.book_list.components
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyListState
@@ -14,7 +13,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.dk.bookpedia.book.domain.Book
-import com.dk.bookpedia.book.presentation.boot_list.BookListAction
 
 @Composable
 fun BookList(

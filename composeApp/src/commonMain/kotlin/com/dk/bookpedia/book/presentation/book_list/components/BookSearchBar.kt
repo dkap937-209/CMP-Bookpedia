@@ -1,4 +1,4 @@
-package com.dk.bookpedia.book.presentation.boot_list.components
+package com.dk.bookpedia.book.presentation.book_list.components
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.background

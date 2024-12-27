@@ -4,13 +4,10 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.dk.bookpedia.book.domain.Book
-import com.dk.bookpedia.book.presentation.boot_list.BookListScreen
-import com.dk.bookpedia.book.presentation.boot_list.BookListScreenRoot
-import com.dk.bookpedia.book.presentation.boot_list.BookListState
-import com.dk.bookpedia.book.presentation.boot_list.books
-import com.dk.bookpedia.book.presentation.boot_list.components.BookList
-import com.dk.bookpedia.book.presentation.boot_list.components.BookSearchBar
+import com.dk.bookpedia.book.presentation.book_list.BookListScreen
+import com.dk.bookpedia.book.presentation.book_list.BookListState
+import com.dk.bookpedia.book.presentation.book_list.books
+import com.dk.bookpedia.book.presentation.book_list.components.BookSearchBar
 
 @Preview(showBackground = true)
 @Composable

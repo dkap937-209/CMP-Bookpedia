@@ -1,4 +1,4 @@
-package com.dk.bookpedia.book.presentation.boot_list
+package com.dk.bookpedia.book.presentation.book_list
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -9,7 +9,6 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.statusBarsPadding
-import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.pager.HorizontalPager
@@ -39,8 +38,8 @@ import cmp_bookpedia.composeapp.generated.resources.no_favourite_books
 import cmp_bookpedia.composeapp.generated.resources.no_search_results
 import cmp_bookpedia.composeapp.generated.resources.search_results
 import com.dk.bookpedia.book.domain.Book
-import com.dk.bookpedia.book.presentation.boot_list.components.BookList
-import com.dk.bookpedia.book.presentation.boot_list.components.BookSearchBar
+import com.dk.bookpedia.book.presentation.book_list.components.BookList
+import com.dk.bookpedia.book.presentation.book_list.components.BookSearchBar
 import com.dk.bookpedia.core.presentation.DarkBlue
 import com.dk.bookpedia.core.presentation.DesertWhite
 import com.dk.bookpedia.core.presentation.SandYellow

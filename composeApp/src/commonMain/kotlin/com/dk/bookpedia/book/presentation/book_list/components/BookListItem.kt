@@ -1,4 +1,4 @@
-package com.dk.bookpedia.book.presentation.boot_list.components
+package com.dk.bookpedia.book.presentation.book_list.components
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
@@ -33,7 +33,6 @@ import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.max
 import cmp_bookpedia.composeapp.generated.resources.Res
 import cmp_bookpedia.composeapp.generated.resources.book_error_2
 import coil3.compose.rememberAsyncImagePainter
