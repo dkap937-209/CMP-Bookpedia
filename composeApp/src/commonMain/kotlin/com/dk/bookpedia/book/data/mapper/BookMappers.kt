@@ -8,9 +8,9 @@ fun SearchedBookDto.toBook(): Book {
         id = id,
         title = title,
         imageUrl = if(coverKey != null) {
-            "https://covers.openlibary.org/b/olid/$coverKey-L.jpg"
+            "https://covers.openlibrary.org/b/olid/${coverKey}-L.jpg"
         } else {
-            "https://covers.openlibary.org/b/olid/$coverAlternativeKey-L.jpg"
+            "https://covers.openlibrary.org/b/id/${coverAlternativeKey}-L.jpg"
         },
         authors = authorNames ?: emptyList(),
         description = null,
