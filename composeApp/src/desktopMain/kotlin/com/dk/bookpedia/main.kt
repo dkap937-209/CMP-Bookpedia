@@ -1,11 +1,9 @@
 package com.dk.bookpedia
 
-import androidx.compose.runtime.remember
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
+import com.dk.bookpedia.app.App
 import com.dk.bookpedia.di.initKoin
-import io.ktor.client.engine.okhttp.OkHttp
-import org.koin.core.context.startKoin
 
 fun main() {
     initKoin()
