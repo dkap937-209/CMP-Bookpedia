@@ -31,6 +31,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import cmp_bookpedia.composeapp.generated.resources.Res
 import cmp_bookpedia.composeapp.generated.resources.description_unavailable
 import cmp_bookpedia.composeapp.generated.resources.languages
+import cmp_bookpedia.composeapp.generated.resources.pages
 import cmp_bookpedia.composeapp.generated.resources.rating
 import cmp_bookpedia.composeapp.generated.resources.synopsis
 import com.dk.bookpedia.book.presentation.book_detail.components.BlurredImageBackground
@@ -100,18 +101,19 @@ private fun BookDetailScreen(
                     style = MaterialTheme.typography.titleMedium,
                     textAlign = TextAlign.Center
                 )
+
                 Row(
                     modifier = Modifier
                         .padding(vertical = 8.dp),
                     horizontalArrangement = Arrangement.spacedBy(16.dp)
-                ) { 
+                ) {
                     state.book.averageRating?.let { rating ->
                         TitledContent(
-                            title = stringResource(Res.string.rating)
+                            title = stringResource(Res.string.rating),
                         ) {
                             BookChip {
                                 Text(
-                                    text = "${round((rating * 10) / 10.0)}"
+                                    text = "${round(rating * 10) / 10.0}"
                                 )
                                 Icon(
                                     imageVector = Icons.Default.Star,
@@ -121,12 +123,13 @@ private fun BookDetailScreen(
                             }
                         }
                     }
-
                     state.book.numPages?.let { pageCount ->
-                        BookChip {
-                            Text(
-                                text = pageCount.toString()
-                            )
+                        TitledContent(
+                            title = stringResource(Res.string.pages),
+                        ) {
+                            BookChip {
+                                Text(text = pageCount.toString())
+                            }
                         }
                     }
                 }
@@ -139,14 +142,12 @@ private fun BookDetailScreen(
                     ) {
                         FlowRow(
                             horizontalArrangement = Arrangement.Center,
-                            modifier = Modifier
-                                .wrapContentSize(Alignment.Center)
+                            modifier = Modifier.wrapContentSize(Alignment.Center)
                         ) {
                             state.book.languages.forEach { language ->
                                 BookChip(
                                     size = ChipSize.SMALL,
-                                    modifier = Modifier
-                                        .padding(2.dp)
+                                    modifier = Modifier.padding(horizontal = 2.dp)
                                 ) {
                                     Text(
                                         text = language.uppercase(),
